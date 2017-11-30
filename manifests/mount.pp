@@ -14,6 +14,7 @@ define cvmfs::mount($cvmfs_quota_limit = undef,
   $cvmfs_memcache_size = undef,
   $cvmfs_claim_ownership = undef,
   $cvmfs_follow_redirects = undef,
+  $cvmfs_http_proxy = undef,
   $mount_options = 'defaults,_netdev,nodev',
   $mount_method = $cvmfs::mount_method,
 ) {
