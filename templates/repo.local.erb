@@ -62,6 +62,12 @@ CVMFS_MOUNT_RW=<%= @cvmfs_mount_rw %>
 <% if @cvmfs_follow_redirects -%>
 CVMFS_FOLLOW_REDIRECTS='<%= @cvmfs_follow_redirects %>'
 <% end -%>
+<% if @cvmfs_external_url -%>
+CVMFS_EXTERNAL_URL='<%=  @cvmfs_external_url %>'
+<% end -%>
+<% if @cvmfs_keys_dir -%>
+CVMFS_KEYS_DIR='<%= @cvmfs_keys_dir %>'
+<% end -%>
 <%if @cvmfs_env_variables -%>
 <% @cvmfs_env_variables.each_pair do |var, value| -%>
 export <%=var-%>=<%=value%>
